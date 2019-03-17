@@ -36,7 +36,7 @@ node {
 
   stage ('Notification') {
     mail from: "jenkins@mycompany.com",
-         to: "devopsteam@mycompany.com",
+         to: "nathangoodman@gmail.com",
          subject: "Terraform build complete",
          body: "Jenkins job ${env.JOB_NAME} - build ${env.BUILD_NUMBER} complete"
   }

@@ -1,1 +1,0 @@
-bucketname = "n8-jenkins-tf-demo"

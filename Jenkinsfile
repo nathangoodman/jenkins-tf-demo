@@ -11,6 +11,10 @@ pipeline {
        checkout scm
       }
 
+      stage ('Terraform init') {
+        sh 'terraform init'
+      }
+      
       stage ('Terraform Plan') {
         sh 'terraform plan -no-color -out=create.tfplan'
       }
